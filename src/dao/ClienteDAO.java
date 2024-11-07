@@ -51,7 +51,7 @@ public class ClienteDAO {
         
         try {
             PreparedStatement st = this.conexao.prepareStatement(query);
-            if (nome.length() > 0)st.setString(1,nome);
+            if (!nome.isEmpty())st.setString(1,nome);
             ResultSet resultSet = st.executeQuery();
             
             while (resultSet.next()) {
