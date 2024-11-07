@@ -13,7 +13,7 @@ public class GeraConexao {
         this.dbName = "postgres";
         this.url = "jdbc:postgresql://localhost:5432/" + this.dbName;
         this.user = "postgres";
-        this.password = "password";
+        this.password = "password1";
         this.conexao = null;
     }
 
